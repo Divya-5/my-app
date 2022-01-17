@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
 class DemoForm extends Component {
   constructor(props) {
     super(props)
@@ -73,16 +72,6 @@ class DemoForm extends Component {
     )
   }
   render() {
-    const Button = styled.button`
-    /* Adapt the colors based on primary prop */
-    background: ${props => props.primary ? "palevioletred" : "white"};
-    color: ${props => props.primary ? "white" : "palevioletred"};
-    font-size: 1em;
-    margin: 1em;
-    padding: 0.25em 1em;
-    border: 2px solid palevioletred;
-    border-radius: 3px;
-  `;
     return (
       <form onSubmit={this.handleSubmit} className="form-style">
         <div  className="mb-20">
@@ -144,7 +133,7 @@ class DemoForm extends Component {
           <label>Month:</label>
           <input type="month" onChange={this.handleMonth} />
         </div>
-        <Button primary type="submit">Submit</Button>
+        <button  type="submit">Submit</button>
       </form>
     )
   }
