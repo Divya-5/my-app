@@ -1,5 +1,6 @@
 import './App.css';
-import PostList from './components/PostList';
+import PostForm from './components/PostForm';
+//import PostList from './components/PostList';
 //import GrandParent from './components/GrandParent';
 //import { UserProvider } from './components/UserContext'
 //import DemoForm from './components/DemoForm';
@@ -41,7 +42,8 @@ function App() {
  {/* <UserProvider value="Divya"> // value is a keyword
  <GrandParent />
  </UserProvider> */}
- <PostList />
+ {/* <PostList /> */}
+ <PostForm />
     </div>
   );
 }
