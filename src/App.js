@@ -1,6 +1,7 @@
 import './App.css';
-import GrandParent from './components/GrandParent';
-import { UserProvider } from './components/UserContext'
+import PostList from './components/PostList';
+//import GrandParent from './components/GrandParent';
+//import { UserProvider } from './components/UserContext'
 //import DemoForm from './components/DemoForm';
 //import ParentLifecycle from './components/ParentLifecycle';
 //import RefsDemo from './components/RefsDemo';
@@ -37,9 +38,10 @@ function App() {
  {/* <DemoForm /> */}
  {/* <ParentLifecycle /> */}
  {/* <RefsDemo /> */}
- <UserProvider value="Divya"> // value is a keyword
+ {/* <UserProvider value="Divya"> // value is a keyword
  <GrandParent />
- </UserProvider>
+ </UserProvider> */}
+ <PostList />
     </div>
   );
 }
